@@ -1,0 +1,184 @@
+.button1{
+  outline:none;
+  border: 0px;
+  position:absolute;
+  padding: 10px;
+  z-index: 7;
+  font-size: 30px;
+  color: #fff;
+  top: 200px;
+  width: 160px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.hearts{
+  outline:none;
+  background-color: transparent;
+  border: 0px;
+  padding-bottom: 80px;
+  font-size: 30px;
+  position:relative;
+  z-index: 5;
+  top: 150px;
+  width: 250px;
+  height: 250px;
+  background-image: url("heart.png");
+  color: #F7F7F7;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cats{
+  position:absolute;
+  z-index: 3;
+  top: 180px;
+  width: 200px;
+  height: 200px;
+  background-image: url("cat.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.miaos{
+  position:absolute;
+  z-index: 4;
+  top: 180px;
+  width: 100px;
+  height: 100px;
+  background-image: url("miao.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.filterdiv{
+  animation-name: oneanime;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.catanime{
+  animation-name: twoanime;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.miaoanime{
+  animation-name: threeanime;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.loveanime{
+  animation-name: loveanime;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 9999999;
+}
+
+@keyframes oneanime
+{
+  0%   {-webkit-filter:hue-rotate(0deg);-webkit-transform:translateX(-650px) translateY(-350px) scale(0)}
+  10%   {-webkit-filter:hue-rotate(36deg);-webkit-transform:translateX(-490px) translateY(-220px) scale(0.5)}
+  20%   {-webkit-filter:hue-rotate(72deg);-webkit-transform:translateX(-370px) translateY(0px) scale(0.8)}
+  30%   {-webkit-filter:hue-rotate(108deg);-webkit-transform:translateX(-270px) translateY(-150px) scale(1)}
+  40%   {-webkit-filter:hue-rotate(144deg);-webkit-transform:translateX(-200px) translateY(-100px) scale(1)}
+  50%  {-webkit-filter:hue-rotate(180deg);-webkit-transform:translateX(-120px) translateY(0px) scale(1)}
+  60%  {-webkit-filter:hue-rotate(216deg);-webkit-transform:translateX(-80px) translateY(-30px) scale(1)}
+  70%  {-webkit-filter:hue-rotate(252deg);-webkit-transform:translateX(-40px) translateY(-20px) scale(1)}
+  80%  {-webkit-filter:hue-rotate(288deg);-webkit-transform:translateX(-20px) translateY(0px) scale(1)}
+  90%  {-webkit-filter:hue-rotate(324deg);-webkit-transform:translateX(-10px) translateY(-10px) scale(1)}
+  100% {-webkit-filter:hue-rotate(360deg);-webkit-transform:translateX(0px) translateY(0px) scale(1)}
+}
+@keyframes twoanime
+{
+  0%   {opacity:0.4;-webkit-transform:scale(0.6);}
+  25%  {opacity:0.6;-webkit-transform:scale(0.7);}
+  50%  {opacity:0.8;-webkit-transform:scale(0.8);}
+  75%  {opacity:1;-webkit-transform:scale(0.9);}
+  100% {opacity:1;-webkit-transform:scale(1);}
+}
+
+@keyframes threeanime
+{
+  0%   {opacity:0.2;-webkit-transform:scale(0.6) translateY(20px) translateX(-80px);}
+  25%  {opacity:0.4;-webkit-transform:scale(0.7) translateY(15px) translateX(-60px);}
+  50%  {opacity:0.6;-webkit-transform:scale(0.8) translateY(10px) translateX(-40px);}
+  75%  {opacity:0.8;-webkit-transform:scale(0.9) translateY(5px) translateX(-20px);}
+  100% {opacity:1;-webkit-transform:scale(1) translateY(0px) translateX(0px);}
+}
+
+@keyframes loveanime
+{
+  0%   {-webkit-filter:hue-rotate(0deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+}
+
+//===========================================
+
+.title{
+  color: #4886af;
+  background-color: #fff;
+  font-size: 35px;
+  padding: 5px 5%;
+  border-radius: 5%;
+  text-align: center;
+  height: 100px;
+}
+
+.bad_title{
+  color: #555555;
+  background-color: #fff;
+  font-size: 35px;
+  padding: 5px 5%;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.myrow{
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.text-content{
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;
+  color: #fff;
+  text-align: center;
+ }
+
+#main {
+  background-image: url("star_backgroud.png");
+  //background-attachment: scroll;
+  //background-repeat: repeat;
+}
+
+.furture_title{
+  color: #073245;
+  font-size: 50px;
+  text-align: center;
+}
+
+.invis{
+  opacity: 0.0;
+}
+
+.img_rote{
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.img_unrote{
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
